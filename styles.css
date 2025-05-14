@@ -1,0 +1,142 @@
+:root{
+    box-sizing: border-box;
+    color: #14191C;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+    background: #F4F9FF;
+}
+a{
+    text-decoration: none;
+    color: #14191C;
+}
+a:hover{
+    color: #409CDE;
+}
+header > .wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #F4F9FF;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #000000;
+    box-shadow: 0 4px 9px 0 #71B8FF0D;
+}
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+header{
+    padding: 20px;
+}
+nav > ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 26px;
+}
+nav > ul > li > a{
+    display: block;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+nav > ul > li > a:hover{
+    background: #2d418b1a;
+    color: #409CDE;
+}
+.drop-down{
+    display: none;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.section-header > h2{
+    font-size: 48px;
+    line-height: 100%;
+    position: sticky;
+    z-index: 50;
+    top: 125px;
+}
+.article-title{
+    font-size: 18px;
+    line-height: 1.3333;
+    margin: 0 0;
+}
+.long .article-title{
+    font-size: 24px;
+    line-height: 100%;
+}
+.article-date, .tag{
+    font-size: 12px;
+    line-height: 1.75;
+}
+.article-date {
+    color: #B1B1B1;
+    font-weight: bold;
+}
+.tag{
+    border: 1px solid #3660CE;
+    border-radius: 14px;
+    padding: 5px 10px;
+}
+.article-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.article-info{
+    margin-top: 8px;
+}
+.section-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 40px 20px;
+}
+.article-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px 20px;
+}
+.article-grid .long{
+    grid-column-end: span 2;
+}
+.article{
+    display: grid;
+    grid-column-end: span 2;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.article .article-info{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+}
+.article .article-title{
+    flex: 1 0 auto;
+}
+.section-grid{
+    margin: 56px 0;
+}
